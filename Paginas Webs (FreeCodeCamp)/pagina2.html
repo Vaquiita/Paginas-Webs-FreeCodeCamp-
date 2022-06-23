@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <title>PROYECTO Nº2</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Sesion Gratuita durante 5 meses</h1>
+            <p id="description">Sorteamos 5 meses gratuitos en nuestro Gimnasio (El Templo Fitness) y queremos que seas el
+                ganador.</p>
+            </header>
+
+        <form id="survey-form">
+
+            <div id="form__grupos">
+                <label for="name" id="name-label">Nombre:</label>
+                <input type="text" id="name" name="name" class="form__control" placeholder="Ingrese su nombre" required>
+            </div>
+
+            <div id="form__grupos">
+                <label for="apellido" id="apellido__label">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" class="form__control" placeholder="Ingrese su apellido" required>
+            </div>
+
+            <div id="form__grupos">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" class="form__control" placeholder="Ingrese su email" required>
+            </div>
+
+            <div id="form__grupos">
+                <label for="number" id="number-label">Edad:</label>
+                <input type="number" name="number" class="form__control" id="number" min="13" max="99" placeholder="Ingrese su Edad" required>
+            </div>
+
+            <div id="form__grupos">
+                <label for="celular" id="celular__label">Celular:
+                    <span class="opcional">(opcional)</span>
+                </label>
+                <input type="number" name="celular" id="celular" class="form__control" placeholder="Ingrese su número de celular">
+            </div>
+
+            <div id="form__grupos">
+                <p>¿Que plan de entreno estas buscando?</p>
+                <select name="plan" id="dropdown" class="form__control-deslizar" required>
+                    <option disabled selected value>Selecciona el plan de entreno que prefieras</option>
+                    <option value="funcional">Funcional</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="perdidadegrasa">Perdida de Grasa</option>
+                    <option value="hipertrofia">Hipertrofia</option>
+                </select>
+            </div>
+
+            <div id="form__grupos">
+                <p>¿Cuando entrenaste los ultimos 2 meses?</p>
+                <label class="input__label">
+                    <input type="radio" name="entrenos" value="no-entrene" class="input__radio" checked>
+                    No entrené
+                </label>
+                <label class="input__label">
+                    <input type="radio" name="entrenos" value="pocas" class="input__radio">
+                    Pocas
+                </label>
+                <label class="input__label">
+                    <input type="radio" name="entrenos" value="siempre" class="input__radio">
+                    Siempre
+                </label>
+            </div>
+
+            <div id="form__grupos">
+                <p>¿Estás intentando conseguir estos objetivos actualmente? Si es así, ¿cómo?</p>
+                <select name="objetivos" id="dropdown" class="form__control-deslizar" required>
+                    <option disabled selected value>Selecciona una de las siguientes opciones</option>
+                    <option value="casa">Ejercicios en casa</option>
+                    <option value="programa">Programa</option>
+                    <option value="deportes">Deporte</option>
+                    <option value="dieta">Dieta</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div id="form__grupos">
+                <p>¿Cuales son tus expectativas al finalizar estos 5 meses de entreno?</p>
+                <label class="input__label">
+                    <input type="checkbox" name="expectativas" value="bajar-de-peso" class="input__checkbox">
+                    Bajar de peso
+                </label>
+                <label class="input__label">
+                    <input type="checkbox" name="expectativas" value="ganar-masa-muscular" class="input__checkbox">
+                    Ganar masa muscular
+                </label>
+                <label class="input__label">
+                    <input type="checkbox" name="expectativas" value="mejorar-mi-estado-fisico" class="input__checkbox">
+                    Mejorar mi estado fisico
+                </label>
+                <label class="input__label">
+                    <input type="checkbox" name="expectativas" value="mejorar-mi-salud" class="input__checkbox">
+                    Mejorar mi salud
+                </label>
+                <label class="input__label">
+                    <input type="checkbox" name="expectativas" value="tonificar-mis-musculos" class="input__checkbox">
+                    Tonificar mis musculos
+                </label>
+                <label class="input__label">
+                    <input type="checkbox" name="expectativas" value="definir-mis-musculos" class="input__checkbox">
+                    Definir mis musculos
+                </label>
+            </div>
+
+            <div id="form__grupos">
+                <p>¿Quieres darnos alguna recomendación?<span class="opcional">(opcional)</span></p>
+                <textarea name="comentario" id="comentarios" class="input__textarea"
+                    placeholder="Ingresa tu comentario aquí..."></textarea>
+            </div>
+
+            <div id="form__grupos">           
+                <button type="submit" id="submit" class="boton">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

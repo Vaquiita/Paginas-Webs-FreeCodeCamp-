@@ -1,0 +1,233 @@
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+:root {
+    --color-primario: rgb(91, 247, 239);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient( 
+        0deg, 
+        rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ),
+        url(https://trophyfitness.com/fitness/2021/07/Team-1-1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.header h1 {
+    font-size: 35px;
+    color: var(--color-primario);
+    padding-top: 15px;
+    text-shadow: 0 0 7px rgb(153, 0, 255);
+    padding: 10px;
+}
+
+.header p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-top: 0;
+    text-shadow: 0 0 7px rgb(153, 0, 255);
+}
+
+#survey-form {
+    border: 3px solid rgb(43, 185, 241);
+    background-color: #8c00ff33;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px 7px rgb(43, 185, 241);
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px 30px;
+}
+
+#form__grupos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+#form__grupos label {
+    color: var(--color-primario);
+    padding: 5px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#form__grupos .input__label {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+#form__grupos input {
+    color: rgb(255, 255, 255);
+}
+
+.form__control {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid cyan;
+}
+
+.form__control:focus {
+    border: none;
+    background: linear-gradient(to bottom, transparent, rgba(1, 141, 160, 0.562));
+}
+
+.form__control-deslizar {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid cyan;
+}
+
+.form__control-deslizar:focus {
+    color: rgb(0, 0, 0);
+    background-color: #00f7ffd2;;
+    border: none;
+}
+
+::placeholder {
+    color: rgb(121, 121, 121);
+}
+
+
+.opcional {
+    font-size: 13px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    color: rgb(185, 185, 185);
+}
+
+#form__grupos p {
+    color: var(--color-primario);
+    font-size: 18px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.input__radio {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.input__checkbox {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.input__textarea {
+    resize: none;
+    height: 100px;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid cyan;
+    color: rgb(255, 255, 255);
+}
+
+.input__textarea:focus {
+    color: rgb(255, 255, 255);
+    border: none;
+    background: linear-gradient(to bottom, transparent, rgba(1, 141, 160, 0.562));
+}
+
+.boton {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(147, 224, 255);
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgb(0, 160, 253);
+    border: none;
+}
+
+.boton:hover {
+    background-color: rgb(43, 185, 241);
+}
+
+
+@media (max-width: 761px) {
+    #title {
+        font-size: 30px;
+    }
+    #description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 540px) {
+   #survey-form {
+       width: 100%;
+   }
+   #title {
+       font-size: 27px;
+   }
+   #description {
+       font-size: 12px;
+   }
+}
+
+@media (min-width: 1300px) {
+    #survey-form {
+        width: 40%;
+    }
+}
+
+@media (max-width:485px) {
+    #title {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+    #description {
+        font-size: 10px;
+    }
+}

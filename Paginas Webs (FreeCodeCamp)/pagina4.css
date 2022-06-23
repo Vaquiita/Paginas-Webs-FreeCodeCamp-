@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+}
+
+:root {
+    --primario: rgb(64, 244, 184);
+}
+
+/* BARRA DE NAVEGACION */
+#navbar {
+    background-image: url(https://images.alphacoders.com/474/474398.jpg);
+    padding-bottom: 20px;
+}
+
+#navbar h1 {
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 5px 4px 4px rgba(64, 244, 184, 0.465);
+
+}
+
+/* ul */
+.nav-link_container {
+    list-style: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 10px;
+    background-color: rgba(255, 255, 255, 0.22);
+    margin: 0 20px;
+}
+/* li */
+.nav-link_container li {
+    padding: 13px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.nav-link_container li:hover {
+    background-color: rgba(64, 244, 184, 0.278);
+}
+
+.iconos {
+    display: none;
+}
+
+/* a */
+.nav-link {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+
+}
+
+/* MAIN */
+
+.main-section {
+    padding: 20px;
+}
+
+#main-doc header {
+    background-color: var(--primario);
+    font-size: 20px; /* 30 */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 900;
+}
+
+#main-doc p {
+    margin: 20px 10px;
+    font-weight: 300;
+}
+
+#main-doc li {
+    margin: 10px 30px;
+    font-weight: 300;
+}
+
+#referencia span {
+    font-weight: 600;
+}
+
+/* MEDIA */
+
+@media (min-width: 815px) {
+    body {
+        display: flex;
+    }
+
+    #navbar {
+        position: fixed;
+        height: 100vh;
+        width: 300px;
+        border-right: 7px solid var(--primario);
+    }
+
+    #main-doc {
+        margin-left: 300px;
+    }
+
+    .iconos-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .iconos {
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        font-size: 40px;
+        position: absolute;
+        bottom: 0;
+        margin: 25px;
+    }
+    .iconos a {
+        color: var(--primario);
+    }
+    .iconos i:hover {
+        transform: scale(1.2);
+        transition-timing-function: ease;
+        transition-duration: .3s;
+        color: rgb(15, 171, 119);
+    }
+}

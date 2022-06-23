@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* ---------------------PAGINA 1--------------------- */
+#pag1__fondo-contenedor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+#pag1__fondo {
+  background-image: url(https://images.alphacoders.com/474/474398.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  width: 100%;
+  height: 160%;
+  animation-name: fondo1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes fondo1 {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#pag1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#title {
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 80px;
+  color: white;
+  text-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+#subtitle {
+  position: relative;
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  color: white;
+  text-shadow: 0 0 7px rgb(0, 0, 0);
+}
+
+#img-div {
+  position: relative;
+  width: 100vh;
+  height: 65vh;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  background: linear-gradient(#2cddb788, #03524881);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.452);
+}
+
+#img-div img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  display: block;
+}
+
+#img-caption {
+  padding-top: 10px;
+  font-size: 17px;
+  color: white;
+  text-shadow: 0 0 7px rgb(0, 0, 0);
+}
+
+/* ---------------------PAGINA 2--------------------- */
+
+#tribute-info {
+  text-align: center;
+  position: relative;
+}
+
+#pag2 {
+  background-image: url(http://wallpapers.org.es/wp-content/uploads/2012/10/textura_de_cuero_usado.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#pag2__contenedor-club {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#pag2__contenedor-seleccion {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.record__titulo-contenedor {
+  position: relative;
+
+}
+
+#record__titulo {
+  color: rgb(0, 255, 255);
+  font-size: 45px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  font-weight: bolder;
+  text-shadow: 10px 10px 10px rgb(0, 0, 0);
+  z-index: 5;
+  position: relative;
+  box-shadow: 0px 0px 10px 6px rgba(255, 255, 255, 0.452);
+  backdrop-filter: blur(10px);
+}
+
+/*LISTA CONTENEDORA*/
+.lista-contenedora-club {
+  display: flex;
+}
+
+.lista-contenedora-seleccion {
+  display: flex;
+}
+/* PARTE IZQUIERDA (RECORDS)*/
+.izquierda-club {
+  display: flex;
+  align-items: center;
+  height: 815px;
+  width: 100%;
+}
+.izquierda-seleccion {
+  display: flex;
+  align-items: center;
+  height: 815px;
+  width: 100%;
+}
+
+.ul {
+  text-align: left;
+  list-style-type: circle;
+  color: rgb(0, 255, 255);
+}
+
+.lista-hijas {
+  padding: 15px;
+  font-size: 17px;
+  cursor: context-menu;
+}
+
+.record-club {
+  color: rgb(82, 252, 252);
+  text-shadow: 3px 7px 10px black;
+  font-weight: bolder;
+}
+
+.record-club:hover {
+  font-size: 18px;
+  color: rgb(165, 165, 165);
+  cursor: context-menu;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+/*CLUBES*/
+/* PARTE DERECHA (LOGO DE CLUBES) */
+.derecha-club {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 815px;
+  width: 100%;
+}
+.psg-cont {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.barsa-cont {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.club {
+  border: none;
+  opacity: 0.5;
+  width: 200px;
+  height: 200px;
+}
+.derecha-club img:hover {
+  opacity: 1;
+  width: 250px;
+  height: 250px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+/*SELECCION*/
+/* PARTE DERECHA (LOGO DE CLUBES) */
+.derecha-seleccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 815px;
+  width: 100%;
+}
+.afa-cont {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.derecha-seleccion img:hover {
+  opacity: 1;
+  width: 250px;
+  height: 250px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+/* ---------------------PAGINA 3--------------------- */
+#pag3 {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/000/600/537/large_2x/abstract-black-background-gradient-that-looks-modern-vector.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+.maradona {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 255, 255);
+  margin: 0 20px 0 20px;
+  border: 4px solid rgb(0, 255, 255);
+  box-shadow: 0 0 50px 0 white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.maradona img {
+  width: 150px;
+  float: left;
+  position: relative;
+  margin-right: 10px;
+  bottom: 20px;
+}
+.reportaje {
+  padding: 15px;
+}
+h3 {
+  color: rgb(0, 255, 255);
+  padding: 70px;
+}
+#tribute-link {
+  color: rgb(0, 194, 253);
+}

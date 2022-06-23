@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina3.css">
+    <script src="https://kit.fontawesome.com/d74a8aa5fa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
+
+    <title>PROYECTO Nº3</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <nav id="nav-bar">
+            <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png" alt="coca-cola">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul id="nav-container">
+                <li class="nav-link-li"><a class="nav-link" href="#section-form">Inicio</a></li>
+                <li class="nav-link-li"><a class="nav-link" href="#section-caracteristicas">Caracteristicas</a></li>
+                <li class="nav-link-li"><a class="nav-link" href="#section-video">Sobre Nosotros</a></li>
+                <li class="nav-link-li"><a class="nav-link" href="#section-combos">Combos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="section-form" class="item">
+            <p>SUSCRÍBETE PARA TENER UN <span>20% OFF</span> EN LAS PRIMERAS 3 COMPRAS MAYORISTAS</p>
+            <form class="form" id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" name="email" class="form-input"
+                    placeholder="Ingrese su dirección de correo electrónico" required>
+                <div class="boton-form">
+                    <input type="submit" id="submit" class="form-input" value="SUSCRIBIRSE">
+                </div>
+            </form>
+        </section>
+
+        <section id="section-caracteristicas" class="item">
+            <div class="caracteristicas">
+                <div class="icono">
+                    <i class="fa-solid fa-dolly"></i>
+                </div>
+                <div class="descripcion">
+                    <h2>Stock Inmediato</h2>
+                    <p>Contamos con un stock amplio y seguro, tenemos lo que buscas.</p>
+                </div>
+            </div>
+            <div class="caracteristicas">
+                <div class="icono">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="descripcion">
+                    <h2>Envío rápido</h2>
+                    <p>Pedí lo que necesites y en 5 días hábiles lo tenés en tu casa.</p>
+                </div>
+            </div>
+            <div class="caracteristicas">
+                <div class="icono">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="descripcion">
+                    <h2>Soporte 24/7</h2>
+                    <p>Por cualquier consulta o duda, contactar con nuestro soporte.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-video" class="item">
+            <div id="blur">
+                <h2 id="titulo">SOMOS ESTO Y MÁS</h2>
+            </div>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/4VR9Iemy8SM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            <div id="boton-container2">
+                <a href="#"><input type="submit" id="submit2" class="form-input" value="VER MÁS"></a>
+            </div>
+        </section>
+
+        <section id="section-combos" class="item">
+            <div id="blur">
+                <h2 id="titulo"> LOS COMBOS MÁS PEDIDOS</h2>
+            </div>
+
+            <div id="combos-container">
+                <div id="container-combo">
+                    <div class="combos">
+                        <img class="imagen-combos"
+                            src="https://journey.coca-cola.com/content/dam/journey/lc/es/private/nuestra-compania/lc-es-CompFeature_Content-Image_Mobile.jpg"
+                            alt="">
+                        <h2>COMBO <span>SIMPLE</span></h2>
+                        <p>$4.890</p>
+                        <ol class="lista-combos">
+                            <li><span id="li-span">10</span> Latas Coca-Cola 500ml </li>
+                            <li><span id="li-span">5</span> Coca-Cola Original 3l</li>
+                            <li><span id="li-span">15</span> Coca-Cola Original 500ml</li>
+                        </ol>
+                    </div>
+                    <div id="boton-container-combos">
+                        <a href="#"><input type="submit" id="submit2" class="form-input" value="COMPRAR"></a>
+                    </div>
+                </div>
+
+                <div id="container-combo">
+                    <div class="combos">
+                        <img class="imagen-combos"
+                            src="https://www.coca-cola.com.co/content/dam/one/co/es/homepage/header/Home-argentina_600x750-header-banner-01.jpg"
+                            alt="">
+                        <h2>COMBO <span>GRANDE</span></h2>
+                        <p>$7.999</p>
+                        <ol class="lista-combos">
+                            <li><span id="li-span">20</span> Latas Coca-Cola 500ml</li>
+                            <li><span id="li-span">10</span> Coca-Cola Original 3l</li>
+                            <li><span id="li-span">5</span> Coca-Cola Retornables 2,25l</li>
+                            <li><span id="li-span">25</span> Coca-Cola Original 500ml</li>
+                        </ol>
+                    </div>
+                    <div id="boton-container-combos">
+                        <a href="#"><input type="submit" id="submit2" class="form-input" value="COMPRAR"></a>
+                    </div>
+                </div>
+
+                <div id="container-combo">
+                    <div class="combos">
+                        <img class="imagen-combos"
+                            src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/02/coca-cola-portada-1877741.jpg?itok=7aBLounI"
+                            alt="">
+                        <h2>PREMIUM <span>GOLD</span></h2>
+                        <p>$9.990</p>
+                        <ol class="lista-combos">
+                            <li><span id="li-span">20</span> Latas Coca-Cola 500ml</li>
+                            <li><span id="li-span">50</span> Coca-Cola Original 1l </li>
+                            <li><span id="li-span">30</span> Coca-Cola Original 3l</li>
+                            <li><span id="li-span">25</span> Coca-Cola Original 500ml</li>
+                            <li><span id="li-span">50</span> Coca-Cola Sin Azúcar 2,25l</li>
+                        </ol>
+                    </div>
+                    <div id="boton-container-combos">
+                        <a href="#"><input type="submit" id="submit2" class="form-input" value="COMPRAR"></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="div-img">
+            <img id="footer-img" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png" alt="coca-cola">
+        </div>
+        <div class="div-ul">
+            <ul class="footer-ul">
+                <li class="footer-li"><a class="privacidad" href="#">Privacidad</a></li>
+                <li class="footer-li"><a class="terminos" href="#">Términos</a></li>
+                <li class="footer-li"><a class="contacto" href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="div-coopy">
+            <span>© Copyright 2022, Coca Cola</span>
+        </div>
+    </footer>
+</body>
+
+</html>
